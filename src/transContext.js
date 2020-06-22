@@ -7,7 +7,7 @@ const initialTransactions = [
     { amount: 100, desc: "Deposit" },
     { amount: -200, desc: "Gas Bill" },
 
-]
+];
 
 export const TransactionContext = createContext(initialTransactions);
 
@@ -24,10 +24,18 @@ export const TransactionProvider = ({children})=> {
         })
     }
 
+    function deleteTransaction(index) {
+        dispatch( {
+            type: "DELETE_TRANSACTION",
+            payload: index
+        })
+    }
+
     return(
         <TransactionContext.Provider value={{
             transactions: state,
-            addTransaction
+            addTransaction,
+            deleteTransaction
         }}>
             {children}
         </TransactionContext.Provider>
