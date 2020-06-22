@@ -1,3 +1,13 @@
+# PIAIC BootCamp2020 
+### Expense Tracker App (React)
+
+https://irfan-bootcamp2020-expense_app.surge.sh/
+
+Add and remove transactions. shows transaction history. display income, expense and balance.
+It uses functional components with hooks and the context API
+Auto Deployment on Surge through Github actions with custome YAML config.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
